@@ -4,7 +4,7 @@
 
 angular.module('myApp.controllers', []).
   controller('MainCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
-    $scope.label = $routeParams.word;
+    $scope.word = $routeParams.word;
     $scope.generate = function() {
       html2canvas(document.getElementById("image-wrapper"), {
           onrendered: function(canvas) {
@@ -15,7 +15,7 @@ angular.module('myApp.controllers', []).
             document.getElementById("image-wrapper").innerHTML = "";
             document.getElementById("image-wrapper").appendChild(img);
 
-            document.getElementById("form").innerHTML = "Done!";
+            document.getElementById("submit").innerHTML = '<div class="row"><button disabled class="btn btn-disabled col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">Done!</button></div>';
           }
       });
 

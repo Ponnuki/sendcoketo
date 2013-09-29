@@ -1,9 +1,20 @@
-<div id="image-wrapper">
-  <img src="img/sendcoketo.png" alt="ส่งโค้กให้{{ label }}">
-  <span class="label">{{ label }}</span>
-</div>
+<div class="container">
+  <div class="row">
+    <div id="image-wrapper">
+      <img src="img/sendcoketo.png" alt="ส่งโค้กให้{{ word }}">
+      <div class="word">{{ word }}</div>
+    </div>
+  </div>
 
-<div id="form">
-  <input type="text" ng-model="label">
-  <button ng-click="generate()">Get Image</button>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+        <input class="form-control" type="text" ng-model="word" placeholder="ส่งโค้กให้...">
+      </div>
+    </div>
+
+  <div id="submit">
+    <div class="row">
+      <button class="btn btn-primary col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3" ng-click="generate()">Get Image</button>
+    </div>
+  </div>
 </div>
