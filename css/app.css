@@ -2,6 +2,11 @@ body {
   background-color: #e91100;
 }
 
+.title {
+  color: #fff;
+  text-align: center;
+}
+
 .row {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -21,15 +26,29 @@ body {
   left: 100px;
   width: 360px;
   height: 111px;
-  line-height: 139px;
+  line-height: 100px;
   vertical-align: middle;
   text-align: center;
-  font-size: 72pt;
+  font-family: ThaiSansLite;
+  font-size: 84pt;
   color: #e5dde1;
+  overflow: hidden;
   text-overflow: clip;
   -webkit-transform: rotate(-19.3deg);
   -ms-transform: rotate(-19.3deg);
   -o-transform: rotate(-19.3deg);
   -moz-transform: rotate(-19.3deg);
   transform: rotate(-19.3deg);
+}
+
+.credits {
+  text-align: center;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+@font-face {
+  font-family: ThaiSansLite;
+  src: url('../fonts/thaisanslite_r1.otf'),
+       url('../fonts/thaisanslite_r1.ttf');
 }
