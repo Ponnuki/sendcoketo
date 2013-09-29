@@ -1,0 +1,24 @@
+#image-wrapper {
+  width: 640px;
+  height: 480px;
+}
+
+.label {
+  position: absolute;
+  display: block;
+  top: 213px;
+  left: 100px;
+  width: 360px;
+  height: 111px;
+  line-height: 139px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 72pt;
+  color: #e5dde1;
+  text-overflow: clip;
+  -webkit-transform: rotate(-19.3deg);
+  -ms-transform: rotate(-19.3deg);
+  -o-transform: rotate(-19.3deg);
+  -moz-transform: rotate(-19.3deg);
+  transform: rotate(-19.3deg);
+}
