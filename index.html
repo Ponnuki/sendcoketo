@@ -5,19 +5,9 @@
   <title>SendCokeTo</title>
   <link rel="stylesheet" href="css/app.css"/>
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
-  <div ng-controller="Main">
-    <div id="image-wrapper">
-      <img src="img/sendcoketo.png" alt="ส่งโค้กให้{{ label }}">
-      <span class="label">{{ label }}</span>
-    </div>
-
-    <div id="form">
-      <input type="text" ng-model="label">
-      <button ng-click="generate()">Get Image</button>
-    </div>
-  </div>
+  <div ng-view></div>
 
   <script src="js/html2canvas.js"></script>
   <script src="lib/angular/angular.js"></script>

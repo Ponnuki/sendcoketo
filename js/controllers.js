@@ -3,9 +3,9 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('Main', ['$scope', function($scope) {
+  controller('MainCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
+    $scope.label = $routeParams.word;
     $scope.generate = function() {
-      console.log('generating');
       html2canvas(document.getElementById("image-wrapper"), {
           onrendered: function(canvas) {
             var img=document.createElement("img");
@@ -14,7 +14,7 @@ angular.module('myApp.controllers', []).
 
             document.getElementById("image-wrapper").innerHTML = "";
             document.getElementById("image-wrapper").appendChild(img);
-          
+
             document.getElementById("form").innerHTML = "Done!";
           }
       });
