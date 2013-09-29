@@ -6,13 +6,13 @@
   <div class="row">
     <div id="image-wrapper">
       <img src="img/sendcoketo.png" alt="ส่งโค้กให้{{ word }}">
-      <div class="word">{{ word }}</div>
+      <div id="word">{{ word }}</div>
     </div>
   </div>
 
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-        <input class="form-control" type="text" ng-model="word" placeholder="ส่งโค้กให้...">
+        <input id="input" class="form-control" type="text" ng-model="word" placeholder="ส่งโค้กให้...">
       </div>
     </div>
 
@@ -23,6 +23,12 @@
   </div>
 
   <div class="container">
+    <div class="row">
+      <p>
+        <a href="https://twitter.com/share" data-url="http://narze.github.io/sendcoketo" data-text="ส่งโค้กให้..." class="twitter-share-button" data-lang="en">Tweet</a>
+        <span class="fb-like" data-href="http://narze.github.io/sendcoketo/" data-width="250" data-layout="button_count" data-show-faces="true" data-send="true"></span>
+      </p>
+    </div>
     <p class="credits">By <a href="https://twitter.com/narze">@narze</a></p>
     <p class="credits">Uses <a href="http://getbootstrap.com/">Bootstrap 3.0.0</a>, <a href="http://angularjs.org/">AngularJS</a>, <a href="https://github.com/niklasvh/html2canvas">html2canvas</a>, <a href="http://www.f0nt.com/release/thai-sans-lite/">Thai Sans Lite font</a></p>
   </div>

@@ -1,10 +1,14 @@
 body {
   background-color: #e91100;
+  text-align: center;
+}
+
+a {
+  color: #fff;
 }
 
 .title {
   color: #fff;
-  text-align: center;
 }
 
 .row {
@@ -19,7 +23,7 @@ body {
   margin: 0 auto;
 }
 
-.word {
+#word {
   position: absolute;
   display: block;
   top: 213px;
@@ -28,7 +32,6 @@ body {
   height: 111px;
   line-height: 100px;
   vertical-align: middle;
-  text-align: center;
   font-family: ThaiSansLite;
   font-size: 84pt;
   color: #e5dde1;
@@ -42,7 +45,6 @@ body {
 }
 
 .credits {
-  text-align: center;
   color: #fff;
   font-size: 0.8em;
 }
